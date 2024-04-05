@@ -9,9 +9,24 @@
   >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a
+        mat-list-item
+        routerLink="/elements"
+        routerLinkActive="mdc-list-item--activated"
+        >Elements Table</a
+      >
+      <a
+        mat-list-item
+        routerLink="/dashboard"
+        routerLinkActive="mdc-list-item--activated"
+        >Dashboard</a
+      >
+      <a
+        mat-list-item
+        routerLink="/tree"
+        routerLinkActive="mdc-list-item--activated"
+        >Tree</a
+      >
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -29,7 +44,7 @@
       <span>angular-tcg-angular-config</span>
     </mat-toolbar>
     <main>
-      <h2>This Works!</h2>
+      <router-outlet></router-outlet>
     </main>
   </mat-sidenav-content>
 </mat-sidenav-container>
